@@ -1,0 +1,19 @@
+# 共通
+.env
+*.pyc
+__pycache__/
+node_modules/
+*.log
+*.sqlite3
+.vscode/
+
+# Frontend
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/.env
+backend/azure-ca.pem
