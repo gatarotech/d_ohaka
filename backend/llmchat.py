@@ -25,7 +25,7 @@ def generate_response(question: str, family_id: int, user_id: int, db: Session) 
     )
 
     db_vector = FAISS.load_local("vector_store", embedding_model, allow_dangerous_deserialization=True)
-    retriever = db_vector.as_retriever(search_kwargs={"k": 3})
+    retriever = db_vector.as_retriever(search_kwargs={"k": 1})
     docs_and_scores = retriever.vectorstore.similarity_search_with_score(question, k=1)
 
     print("▼ 検索でヒットした日記とスコア（スコアが小さいほど類似）:", flush=True)

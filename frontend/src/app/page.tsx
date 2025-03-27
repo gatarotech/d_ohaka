@@ -20,9 +20,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen px-4 py-6 bg-gray-50">
-      <div className="max-w-xl mx-auto space-y-4">
-        <h1 className="text-2xl mb-4">ホーム画面</h1>
+    <main className="p-6 bg-gray-50 max-w-xl mx-auto min-h-screen space-y-2">
+      <h1 className="text-xl font-bold mb-4">ホーム</h1>
 
         <div className="flex flex-col gap-2">
           <input
@@ -46,7 +45,7 @@ export default function Home() {
             onClick={handleChatSearch}
             className="p-2 bg-blue-500 text-white rounded w-full"
           >
-            チャット検索
+            故人とチャット
           </button>
           <button
             onClick={handleRegister}
@@ -55,7 +54,6 @@ export default function Home() {
             データ登録
           </button>
         </div>
-      </div>
     </main>
   );
 }

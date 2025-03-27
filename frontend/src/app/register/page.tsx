@@ -35,7 +35,7 @@ export default function RegisterPage() {
 
     return (
         <main className="p-6 bg-gray-50 max-w-xl mx-auto min-h-screen">
-            <h2 className="text-xl mb-4">データ登録画面</h2>
+            <h2 className="text-xl font-bold mb-4">データ登録</h2>
 
             <div className="flex flex-col space-y-2">
                 <button
@@ -51,7 +51,7 @@ export default function RegisterPage() {
                     className="bg-blue-500 text-white px-4 py-2 rounded"
                     disabled={loadingVector}
                 >
-                    {loadingVector ? "更新中..." : "日記vectorを更新"}
+                    {loadingVector ? "更新中..." : "日記vector更新"}
                 </button>
             </div>
         </main>

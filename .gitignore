@@ -6,6 +6,7 @@ node_modules/
 *.log
 *.sqlite3
 .vscode/
+venv/
 
 # Frontend
 frontend/.next/
